@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#f00" >
+<!-- 切换侧边栏的按钮 -->
+    <ImageView 
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/actionbar_menu"
+        />
+<!-- 中间三个按钮 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+	    <RadioGroup
+			android:id="@+id/group"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+			<!--在线音乐按钮-->
+	        <RadioButton
+	        android:id="@+id/radioBtnOnline"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        style="@style/radioButton"
+	        android:background="@drawable/actionbar_discover_selector"
+	        />
+			<!--音乐管理按钮-->
+	        <RadioButton 
+	        android:id="@+id/radioBtnManager"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        style="@style/radioButton"
+			android:background="@drawable/actionbr_music_selector"
+	        />
+			<!--个人信息按钮-->
+	        <RadioButton
+	        android:id="@+id/radioBtnPersonal"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        style="@style/radioButton"
+	         android:background="@drawable/actionbar_friends_selector"
+	        />
+	        
+	    </RadioGroup>
+    </RelativeLayout>   
+    
+<!-- 右边搜索按钮 -->   
+    <ImageView
+		android:id="@+id/IvSearch"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/actionbar_search"
+        />
+	
+</RelativeLayout>
